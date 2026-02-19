@@ -1,16 +1,14 @@
-﻿namespace enexlabs
+﻿using enexlabs.Data;
 
-public class Order
+namespace enexlabs
 {
-	{
-
-      public int Id { get; set; }
-      public User Userid { get; set; }
-      public string OrderData { get; set; }
-      public string Status { get; set; }
-      public string Totalvalue { get; set; }
-      public string Pagamentform { get; set; }
-      public string DeliveryAddress { get; set; }
-
+    public class Order
+    {
+        public int Id { get; set; }
+        public int UserId { get; set; }
+        public User? User { get; set; }
+        public DateTime OrderDate { get; set; }
+        public string Status { get; set; }
+        public decimal TotalValue { get; set; }
     }
 }

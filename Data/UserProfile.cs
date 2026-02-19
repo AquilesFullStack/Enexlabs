@@ -1,10 +1,10 @@
 ﻿namespace enexlabs.Data
 {
     public class UserProfile
-    {   
+    {
         public int Id { get; set; }
-        public User UserId { get; set; }
-        public UserProfile UserProfileId { get; set; }
+        public int UserId { get; set; }
+        public User? User { get; set; }
         public string CompletName { get; set; }
         public string Cpf { get; set; }
         public string Phone { get; set; }

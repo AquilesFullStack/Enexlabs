@@ -1,15 +1,13 @@
 ﻿namespace enexlabs 
-
-public class OrderItem
 {
-	{
-       public string Id { get; set; }
-	   public OrderItem Order { get; set; }
-	   public OrderItem OrderId { get; set; }
-       public string ProductId { get; set; }
-	   public string Quantity { get; set; }
-	   public string UnitPrice { get; set; }
-       public string UnitPriceUnit { get; set; }
-	   public string SubTotal { get; set; }
-	}
+	public class OrderItem
+		{
+		public int Id { get; set; }
+		public int? OrderId { get; set; }
+		public Order? Order { get; set; }
+		public int ProductId { get; set; }
+		public int Quantity { get; set; }
+		public float UnitPrice { get; set; }
+		public int SubTotal { get; set; }
+		}
 }
